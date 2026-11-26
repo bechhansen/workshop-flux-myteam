@@ -1,10 +1,11 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-deployment
-  namespace: default
+  namespace: team1
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: myapp
@@ -23,7 +24,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: my-service
-  namespace: default
+  namespace: team1
 spec:
   selector:
     app: myapp
