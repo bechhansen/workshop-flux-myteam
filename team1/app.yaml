@@ -5,7 +5,7 @@ metadata:
   name: my-deployment
   namespace: team1
 spec:
-  replicas: 2
+  replicas: "two"
   selector:
     matchLabels:
       app: myapp
